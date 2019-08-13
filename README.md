@@ -1,1 +1,1 @@
-# Stacked Cross Refinement Network for Salient Object Detection (ICCV 2019)
+# Stacked Cross Refinement Network for Edge-Aware Salient Object Detection (ICCV 2019)
