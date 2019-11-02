@@ -15,13 +15,7 @@ class BasicConv2d(nn.Module):
                       padding=padding, dilation=dilation, bias=False),
             nn.BatchNorm2d(out_planes)
         )
-        for m in self.modules():
-            if isinstance(m, nn.Conv2d):
-                m.weight.data.normal_(std=0.01)
-            elif isinstance(m, nn.BatchNorm2d):
-                m.weight.data.fill_(1)
-                m.bias.data.zero_()
-
+        
     def forward(self, x):
         x = self.conv_bn(x)
         return x
@@ -153,13 +147,6 @@ class ConcatOutput(nn.Module):
             nn.Conv2d(channel, 1, 1)
         )
 
-        for m in self.modules():
-            if isinstance(m, nn.Conv2d):
-                m.weight.data.normal_(std=0.01)
-            elif isinstance(m, nn.BatchNorm2d):
-                m.weight.data.fill_(1)
-                m.bias.data.zero_()
-
     def forward(self, x1, x2, x3, x4):
         x3 = torch.cat((x3, self.conv_upsample1(self.upsample(x4))), 1)
         x3 = self.conv_cat1(x3)
@@ -196,7 +183,14 @@ class SCRN(nn.Module):
 
         self.output_s = ConcatOutput(channel)
         self.output_e = ConcatOutput(channel)
-
+        
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                m.weight.data.normal_(std=0.01)
+            elif isinstance(m, nn.BatchNorm2d):
+                m.weight.data.fill_(1)
+                m.bias.data.zero_()
+                
         self.initialize_weights()
 
     def forward(self, x):
