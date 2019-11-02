@@ -28,6 +28,7 @@ cd SCRN
         ```
         python train_SCRN.py
         ```
+        * We only use multi-scale traing for data agumentation, and the lr is set as 0.002. If you change to single-scale learning, the lr should better change to 0.005.
     * Test
         * Download the pre-trained model from [google drive](https://drive.google.com/open?id=1PkGX9R-uTYpWBKX0lZRkE2qvvpz1-IiG) and put it in './model/'. This model is only trained on the training set of DUTS and tested on other datasets, including SOC and test set of DUTS. Set your dataset path, then
         ```
