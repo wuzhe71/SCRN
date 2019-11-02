@@ -11,7 +11,7 @@ from utils.data import test_dataset
 from model.ResNet_models import SCRN
 
 model = SCRN()
-model.load_state_dict(torch.load('./model/PreTrained_SCRN.pth'))
+model.load_state_dict(torch.load('./model/model.pth'))
 model.cuda()
 model.eval()
 
