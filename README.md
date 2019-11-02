@@ -5,7 +5,11 @@ Code repository for our paper "Stacked Cross Refinement Network for Edge-Aware S
 ![image](https://github.com/wuzhe71/SCAN/blob/master/figure/framework.png)
 
 # Experiments
+1. Results on traditional datasets
 ![results1](https://github.com/wuzhe71/SCAN/blob/master/figure/results1.png)
+
+2. Results on SOC (attribute-based performance, structure simalarity scores), more comparison can be found in [SOC Leaderboard](http://dpfan.net/SOCBenchmark/)
+![results3](https://github.com/wuzhe71/SCAN/blob/master/figure/results3.png)
 
 # Usage
 1. Requirements
