@@ -18,3 +18,5 @@ cd SCRN
 ```
 
 3. Train/Test
+    * Train
+    * Test
