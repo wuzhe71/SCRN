@@ -7,5 +7,10 @@ Code repository for our paper "Stacked Cross Refinement Network for Edge-Aware S
 # Experiments
 ![results1](https://github.com/wuzhe71/SCAN/blob/master/figure/results1.png)
 
-# Requirements
- * pytorch 0.40+
+# Usage
+* Requirements
+** pytorch 0.40+
+
+* Training
+
+* Testing
