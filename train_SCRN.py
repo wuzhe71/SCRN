@@ -20,8 +20,8 @@ parser.add_argument('--trainsize', type=int, default=352, help='input size')
 parser.add_argument('--trainset', type=str, default='DUTS-TRAIN', help='training  dataset')
 opt = parser.parse_args()
 
-# data preparing
-data_path = '/backup/materials/Dataset/SalientObject/dataset/'
+# data preparing, set your own data path here
+data_path = '/SalientObject/dataset/'
 image_root = data_path + opt.trainset + '/images/'
 gt_root = data_path + opt.trainset + '/gts/'
 train_loader = get_loader(image_root, gt_root, batchsize=opt.batchsize, trainsize=opt.trainsize)
