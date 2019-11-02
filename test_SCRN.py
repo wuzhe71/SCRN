@@ -25,22 +25,17 @@ for dataset in valset:
     image_root = data_path + dataset + '/images/'
     gt_root = data_path + dataset + '/gts/'
     test_loader = test_dataset(image_root, gt_root, testsize=352)
-    time_cost = 0
+
     with torch.no_grad():
         for i in range(test_loader.size):
             image, gt, name = test_loader.load_data()
             gt = np.array(gt).astype('float')
             gt = gt / (gt.max() + 1e-8)
             image = Variable(image).cuda()
-
-            start_time = datetime.now()
+            
             res, edge = model(image)
-            end_time = datetime.now()
-            time = end_time-start_time
-            time_cost = time_cost + (end_time - start_time).total_seconds()
 
             res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=True)
             res = res.sigmoid().data.cpu().numpy().squeeze()
-            # misc.imsave(save_path + name + '.png', res)
-    print('The fps of {} dataset is {:.4f}'.format(dataset, test_loader.size/time_cost))
+            misc.imsave(save_path + name + '.png', res)
 
