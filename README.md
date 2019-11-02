@@ -30,11 +30,11 @@ cd SCRN
         ```
         * We only use multi-scale traing for data agumentation, and the lr is set as 0.002. If you change to single-scale training, the lr should better change to 0.005.
     * Test
-        * Download the pre-trained model from [google drive](https://drive.google.com/open?id=1PkGX9R-uTYpWBKX0lZRkE2qvvpz1-IiG) or [baidu yun](https://pan.baidu.com/s/1E0CSq9VBcZ_YKhgcV8dSDQ), and put it in './model/'. This model is only trained on the training set of DUTS and tested on other datasets, including SOC and test set of DUTS. Set your dataset path, then
+        * Download the pre-trained model from [google drive](https://drive.google.com/open?id=1PkGX9R-uTYpWBKX0lZRkE2qvvpz1-IiG) or [baidu yun](https://pan.baidu.com/s/1Gm-YptzsVnHU0a6YkdjQaQ) (code: ilhx), and put it in './model/'. This model is only trained on the training set of DUTS and tested on other datasets, including SOC and test set of DUTS. Set your dataset path, then
         ```
         python test_SCRN.py
         ```
-        * You can also download he pre-computed saliency maps fron [google drive](https://drive.google.com/open?id=1gRis5weSxuv9w6EZ23MPAnyDe-hUx07L) or [baidu yun](https://pan.baidu.com/s/19ZyaZ3ZB4tqrEmwN2akmWA) 
+        * You can also download he pre-computed saliency maps fron [google drive](https://drive.google.com/open?id=1gRis5weSxuv9w6EZ23MPAnyDe-hUx07L) or [baidu yun](https://pan.baidu.com/s/1VHl_pWvbZGeAKgMwqFEHsw) (code: 8mty)
 
 # Citation
 ```
