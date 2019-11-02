@@ -23,7 +23,11 @@ cd SCRN
 
 3. Train/Test
     * Train
-        * Set your dataset path in train_SCRN.py and run it. 
+        * Download datasets: [DUTS](http://saliencydetection.net/duts/), [DUT-OMRON](http://saliencydetection.net/dut-omron/), [ECSSD](http://www.cse.cuhk.edu.hk/leojia/projects/hsaliency/dataset.html), [HKU-IS](https://i.cs.hku.hk/~gbli/deep_saliency.html), [PASCAL-S](http://www.cbi.gatech.edu/salobj/), [THUR15K](https://mmcheng.net/gsal/), [SOC](http://dpfan.net/SOCBenchmark/).
+        * Set your dataset path, then
+        ```
+        python train_SCRN.py
+        ```
     * Test
         * Download the pre-trained model from [google drive](https://drive.google.com/open?id=1PkGX9R-uTYpWBKX0lZRkE2qvvpz1-IiG) and put it in './model/'. Then set your dataset path in test_SCRN.py and run it.
         * You can also download he pre-computed saliency maps fron [google drive](https://drive.google.com/open?id=1gRis5weSxuv9w6EZ23MPAnyDe-hUx07L)
