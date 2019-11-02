@@ -29,7 +29,10 @@ cd SCRN
         python train_SCRN.py
         ```
     * Test
-        * Download the pre-trained model from [google drive](https://drive.google.com/open?id=1PkGX9R-uTYpWBKX0lZRkE2qvvpz1-IiG) and put it in './model/'. Then set your dataset path in test_SCRN.py and run it.
+        * Download the pre-trained model from [google drive](https://drive.google.com/open?id=1PkGX9R-uTYpWBKX0lZRkE2qvvpz1-IiG) and put it in './model/'. Then set your dataset path, then
+        ```
+        python test_SCRN.py
+        ```
         * You can also download he pre-computed saliency maps fron [google drive](https://drive.google.com/open?id=1gRis5weSxuv9w6EZ23MPAnyDe-hUx07L)
 
 # Citation
