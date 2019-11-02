@@ -8,14 +8,13 @@ Code repository for our paper "Stacked Cross Refinement Network for Edge-Aware S
 ![results1](https://github.com/wuzhe71/SCAN/blob/master/figure/results1.png)
 
 # Usage
-* Requirements
+1. Requirements
     * pytorch 0.40+
 
-* Training
-1. Clone the repo
+2. Clone the repo
 ```
 git clone https://github.com/wuzhe71/SCRN.git 
 cd SCRN
 ```
 
-* Testing
+3. Train/Test
