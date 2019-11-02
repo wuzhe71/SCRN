@@ -19,4 +19,6 @@ cd SCRN
 
 3. Train/Test
     * Train
+        Set your dataset path in train_SCRN.py and run it. 
     * Test
+        Download the pretrained model [google drive](https://drive.google.com/open?id=1PkGX9R-uTYpWBKX0lZRkE2qvvpz1-IiG) and put it in './model/'. Then set your dataset path in test_SCRN.py and run it.
