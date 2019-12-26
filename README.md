@@ -35,7 +35,7 @@ cd SCRN
         python test_SCRN.py
         ```
         * You can also download the pre-computed saliency maps from [google drive](https://drive.google.com/open?id=1gRis5weSxuv9w6EZ23MPAnyDe-hUx07L) or [baidu yun](https://pan.baidu.com/s/1VHl_pWvbZGeAKgMwqFEHsw) (code: 8mty).
-        * The saliency maps of SCRN and compared models in SOC validation set can be downloaded from [google drive](https://drive.google.com/open?id=1gjNtzkxCspiVJOoCU3e-wSz0cP02NuaZ).
+        * The saliency maps of SCRN and compared models in SOC validation set can be downloaded from [google drive](https://drive.google.com/open?id=1gjNtzkxCspiVJOoCU3e-wSz0cP02NuaZ) or [baidu yun](https://pan.baidu.com/s/1FwloUNqf-zEVSSeW6IoFcQ) (code: giow).
 
 # Citation
 ```
