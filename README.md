@@ -49,4 +49,4 @@ year = {2019}
 ```
 
 # Contact Us
-If you have any question, please contact us (zhe.wu@vipl.ict.ac.cn).
+If you have any question, please contact us (wuzh02@pcl.ac.cn).
