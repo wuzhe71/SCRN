@@ -2,7 +2,7 @@
 Code repository for our paper "Stacked Cross Refinement Network for Edge-Aware Salient Object Detection", ICCV 2019 poster. [Paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wu_Stacked_Cross_Refinement_Network_for_Edge-Aware_Salient_Object_Detection_ICCV_2019_paper.pdf) and [supplementary material](http://openaccess.thecvf.com/content_ICCV_2019/supplemental/Wu_Stacked_Cross_Refinement_ICCV_2019_supplemental.pdf) are available.
 
 # Change Log
-2020.11.4：We update the predicted saliency maps of 20 algorithms on SOC test and validation sets!
+2020.11.4：We update the predicted [saliency maps](https://github.com/wuzhe71/SCRN#soc-saliency-maps) of 20 algorithms on SOC test and validation sets!
 # Framework
 ![image](https://github.com/wuzhe71/SCAN/blob/master/figure/framework.png)
 
